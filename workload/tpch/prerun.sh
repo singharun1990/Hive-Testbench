@@ -1,9 +1,9 @@
 #/bin/bash
 
-function usageerror {
-	echo "please enter scale factor in the config"
-	exit 1
-}
+#function usageerror {
+#	echo "please enter scale factor in the config"
+#	exit 1
+#}
 
 function runcommand {
 	if [ "X$DEBUG_SCRIPT" != "X" ]; then
