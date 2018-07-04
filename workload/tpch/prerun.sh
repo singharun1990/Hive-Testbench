@@ -15,6 +15,8 @@ function runcommand {
 
 set -x
 . ./config.sh
+
+$SCALE=1000
 cd ${CURRENT_DIRECTORY}
 echo "Building TPC-H Data Generator"
 (cd tpch-gen; make)
@@ -37,9 +39,9 @@ if [ "X$DEBUG_SCRIPT" != "X" ]; then
 fi
 
 # Sanity checking.
-if [ X"$SCALE" = "X" ]; then
-	usageerror
-fi
+#if [ X"$SCALE" = "X" ]; then
+#	usageerror
+#fi
 
 if [ X"$DIR" = "X" ]; then
 	DIR=/tmp/tpch-generate
