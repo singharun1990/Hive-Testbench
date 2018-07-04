@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 #function usageerror {
 #	echo "please enter scale factor in the config"
